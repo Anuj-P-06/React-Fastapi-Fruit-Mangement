@@ -8,9 +8,6 @@ from typing import List
 class Fruit(BaseModel):
     name: str
 
-class Fruits(BaseModel):
-    fruits: List[Fruit]
-
 app = FastAPI()
 
 origins = [
@@ -20,16 +17,15 @@ origins = [
 app.add_middleware(
         CORSMiddleware,
         allow_origins = origins,
-        allow_credentials = True, # allows us to send jwt token
-        allow_methods = ["*"], # methods like get, post , put, delete
+        allow_methods = ["*"],
         allow_headers = ["*"],
 )
 
 memory_db = {"fruits": []}
 
-@app.get("/fruits", response_model = Fruits)
+@app.get("/fruits")
 def get_fruits():
-    return Fruits(fruits = memory_db["fruits"])
+    return {"fruits": memory_db["fruits"]}
 
 @app.post("/fruits", response_model= Fruit)
 def add_fruit(fruit: Fruit):
@@ -47,9 +43,3 @@ def delete_fruit(fruit_name: str):
 
 if __name__ == "__main__":
     uvicorn.run(app, host = "0.0.0.0", port = 8000)
-
-
-
-
-
-
