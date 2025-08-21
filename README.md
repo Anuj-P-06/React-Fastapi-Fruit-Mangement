@@ -53,11 +53,6 @@ fruit-management-app/
 
 ##  Getting Started
 
-### Prerequisites
-- Python 3.7+
-- Node.js 16+
-- npm or yarn
-
 ### Backend Setup
 
 1. **Navigate to backend directory**
@@ -160,3 +155,4 @@ To persist data, you can integrate:
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
+
