@@ -4,12 +4,12 @@ A full-stack web application for managing a list of fruits. Built with **FastAPI
 
 ## Features
 
--  Add fruits to your list
--  View all fruits in a clean interface
--  Delete fruits from your list
--  Responsive design with side panels
--  Real-time updates without page refresh
--  Modern UI with Tailwind CSS
+-  Add fruits to your list.
+-  View all fruits in a clean interface.
+-  Delete fruits from your list.
+-  Responsive design with side panels.
+-  Real-time updates without page refresh.
+-  Modern UI with Tailwind CSS.
 
 ## Screenshot
 <img width="1917" height="917" alt="Image" src="https://github.com/user-attachments/assets/e22850fb-0726-4c3c-bd12-0ab3f395a014" />
@@ -155,4 +155,5 @@ To persist data, you can integrate:
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
+
 
